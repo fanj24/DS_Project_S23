@@ -231,6 +231,208 @@ chr (3): GENE_ID, GENE_NAME, GENE_FUNCTION
 <div class="cell">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>filtered <span class="ot">&lt;-</span> <span class="fu">filter</span>(named_counts_summary, log_of_pvals <span class="sc">&lt;</span> <span class="sc">-</span><span class="fl">10.25</span>, log_fold_of_change <span class="sc">&gt;</span> <span class="dv">2</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>Result page:</p>
+<table class="table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 12%">
+<col style="width: 10%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong><br>
+GeneId</strong></th>
+<th style="text-align: left;"><strong>cancer_mean_count</strong></th>
+<th style="text-align: left;"><strong>normal_mean_count</strong></th>
+<th style="text-align: left;"><strong>log_fold_of_change</strong></th>
+<th style="text-align: left;"><strong>corrected_pvals</strong></th>
+<th style="text-align: left;"><strong>log_of_pvals</strong></th>
+<th style="text-align: left;"><strong>selected</strong></th>
+<th style="text-align: left;"><strong>GENE_NAME</strong></th>
+<th style="text-align: left;"><strong>GENE_FUNCTION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 10%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 6%">
+<col style="width: 8%">
+<col style="width: 6%">
+<col style="width: 3%">
+<col style="width: 6%">
+<col style="width: 37%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>1</strong></td>
+<td style="text-align: left;">ENSG00000051341</td>
+<td style="text-align: left;">2363.27960</td>
+<td style="text-align: left;">19.6559312</td>
+<td style="text-align: left;">2.080021</td>
+<td style="text-align: left;">3.490752e-12</td>
+<td style="text-align: left;">-11.45708</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">POLQ</td>
+<td style="text-align: left;">DNA&nbsp;polymerase&nbsp;theta</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2</strong></td>
+<td style="text-align: left;">ENSG00000117724</td>
+<td style="text-align: left;">8581.23136</td>
+<td style="text-align: left;">59.4199029</td>
+<td style="text-align: left;">2.159618</td>
+<td style="text-align: left;">1.046504e-11</td>
+<td style="text-align: left;">-10.98026</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">CENPF</td>
+<td style="text-align: left;">centromere&nbsp;protein&nbsp;F</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>3</strong></td>
+<td style="text-align: left;">ENSG00000224094</td>
+<td style="text-align: left;">6828.04553</td>
+<td style="text-align: left;">21.5222897</td>
+<td style="text-align: left;">2.501408</td>
+<td style="text-align: left;">2.335349e-11</td>
+<td style="text-align: left;">-10.63165</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">RPS24P8</td>
+<td style="text-align: left;">ribosomal&nbsp;protein&nbsp;S24&nbsp;pseudogene&nbsp;8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>4</strong></td>
+<td style="text-align: left;">ENSG00000225923</td>
+<td style="text-align: left;">289.47577</td>
+<td style="text-align: left;">1.7718318</td>
+<td style="text-align: left;">2.213190</td>
+<td style="text-align: left;">5.381149e-11</td>
+<td style="text-align: left;">-10.26912</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">none</td>
+<td style="text-align: left;">secretory&nbsp;carrier&nbsp;membrane&nbsp;protein&nbsp;1&nbsp;(SCAMP1)&nbsp;pseudogene</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>5</strong></td>
+<td style="text-align: left;">ENSG00000232917</td>
+<td style="text-align: left;">719.82537</td>
+<td style="text-align: left;">4.7118793</td>
+<td style="text-align: left;">2.184033</td>
+<td style="text-align: left;">4.258655e-11</td>
+<td style="text-align: left;">-10.37073</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">HSPE1P6</td>
+<td style="text-align: left;">heat&nbsp;shock&nbsp;protein&nbsp;family&nbsp;E&nbsp;(Hsp10)&nbsp;member&nbsp;1&nbsp;pseudogene&nbsp;6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>6</strong></td>
+<td style="text-align: left;">ENSG00000233786</td>
+<td style="text-align: left;">197.68631</td>
+<td style="text-align: left;">1.4713848</td>
+<td style="text-align: left;">2.128250</td>
+<td style="text-align: left;">3.506703e-11</td>
+<td style="text-align: left;">-10.45510</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">CDC27P1</td>
+<td style="text-align: left;">cell&nbsp;division&nbsp;cycle&nbsp;27&nbsp;pseudogene&nbsp;1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>7</strong></td>
+<td style="text-align: left;">ENSG00000234287</td>
+<td style="text-align: left;">4545.39705</td>
+<td style="text-align: left;">21.4963541</td>
+<td style="text-align: left;">2.325207</td>
+<td style="text-align: left;">4.140182e-11</td>
+<td style="text-align: left;">-10.38298</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">RPS27P4</td>
+<td style="text-align: left;">ribosomal&nbsp;protein&nbsp;S27&nbsp;pseudogene&nbsp;4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>8</strong></td>
+<td style="text-align: left;">ENSG00000234322</td>
+<td style="text-align: left;">506.35047</td>
+<td style="text-align: left;">3.4966712</td>
+<td style="text-align: left;">2.160796</td>
+<td style="text-align: left;">3.022707e-11</td>
+<td style="text-align: left;">-10.51960</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">ST13P18</td>
+<td style="text-align: left;">ST13,&nbsp;Hsp70&nbsp;interacting&nbsp;protein&nbsp;pseudogene&nbsp;18</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>9</strong></td>
+<td style="text-align: left;">ENSG00000242670</td>
+<td style="text-align: left;">6499.20862</td>
+<td style="text-align: left;">45.6642785</td>
+<td style="text-align: left;">2.153284</td>
+<td style="text-align: left;">5.293796e-11</td>
+<td style="text-align: left;">-10.27623</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">RPL22P13</td>
+<td style="text-align: left;">ribosomal&nbsp;protein&nbsp;L22&nbsp;pseudogene&nbsp;13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>10</strong></td>
+<td style="text-align: left;">ENSG00000244716</td>
+<td style="text-align: left;">3419.60193</td>
+<td style="text-align: left;">13.5090329</td>
+<td style="text-align: left;">2.403351</td>
+<td style="text-align: left;">3.772431e-11</td>
+<td style="text-align: left;">-10.42338</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">RPL17P7</td>
+<td style="text-align: left;">ribosomal&nbsp;protein&nbsp;L17&nbsp;pseudogene&nbsp;7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>11</strong></td>
+<td style="text-align: left;">ENSG00000248578</td>
+<td style="text-align: left;">462.76193</td>
+<td style="text-align: left;">3.6373036</td>
+<td style="text-align: left;">2.104578</td>
+<td style="text-align: left;">2.562159e-11</td>
+<td style="text-align: left;">-10.59139</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">NPM1P21</td>
+<td style="text-align: left;">nucleophosmin&nbsp;1&nbsp;pseudogene&nbsp;21</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>12</strong></td>
+<td style="text-align: left;">ENSG00000263513</td>
+<td style="text-align: left;">74.40898</td>
+<td style="text-align: left;">0.5846537</td>
+<td style="text-align: left;">2.104727</td>
+<td style="text-align: left;">9.718371e-12</td>
+<td style="text-align: left;">-11.01241</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">FAM72C</td>
+<td style="text-align: left;">family&nbsp;with&nbsp;sequence&nbsp;similarity&nbsp;72&nbsp;member&nbsp;C</td>
+</tr>
+</tbody>
+</table>
+<p>Of those, we identified FAM72C as an oncogene with further research; since pseudogenes are non-coding genes and the two genes, DNA polymerase theta and centromere protein F, are necessary participants of cell division, we excluded them as desired target of interest.</p>
 
 </main>
 <!-- /main column -->
